@@ -19,6 +19,10 @@ app.get("/login",(req,res) =>{
 app.get("/youtube",(req,res) =>{
     res.send('<h2> Tushar YouTube </h2>')
 })
+
+app.get("/http",(req,res)=>{
+  res.send('<h3> Hello </h3>')
+})
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
